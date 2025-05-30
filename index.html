@@ -1,207 +1,310 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-      <title>Refrio Climatização</title>
-      <meta name="description" content="Soluções completas em climatização e refrigeração, unindo tecnologia de ponta e sustentabilidade desde 2013.">
-      <meta property="og:title" content="Refrio Climatização – Excelência em Climatização e Refrigeração">
-      <meta property="og:description" content="Referência em engenharia de climatização: inovação, qualidade e sustentabilidade.">
-      <meta property="og:image" content="logo.png">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+  <title>Refrio Climatização</title>
+  <meta name="description" content="Soluções completas em climatização e refrigeração, unindo tecnologia de ponta e sustentabilidade desde 2013.">
+  <meta property="og:title" content="Refrio Climatização – Excelência em Climatização e Refrigeração">
+  <meta property="og:description" content="Referência em engenharia de climatização: inovação, qualidade e sustentabilidade.">
+  <meta property="og:image" content="logo.png">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-  crossorigin="anonymous"
-  referrerpolicy="no-referrer"
-/>
-<link rel="stylesheet" href="style.css">
+  
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family:'Roboto',sans-serif; color:#333; line-height:1.6; }
+    header, nav, main, footer { width:100%; }
+    img { display:block; max-width:100%; height:auto; }
+    .container { max-width:1200px; margin:0 auto; padding:1rem; }
+    .navbar .logo img { width:200px; height:80px; }
+  </style>
 
+  
+  <link rel="preload" as="image" href="imagens/1.webp" fetchpriority="high" type="image/webp">
+ 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-   </head>
-   <body>
-      <nav class="navbar" role="navigation" aria-label="Menu principal">
-         <div class="container">
-            <a href="#home" class="logo" aria-label="Início"><img src="imagens/logo-refrio.webp" alt="Logotipo da Refrio Climatização"></a>
-            <ul class="nav-menu">
-               <li><a href="#home">Início</a></li>
-               <li><a href="#about">Quem Somos</a></li>
-               <li><a href="#mission">Nossa Essência</a></li>
-               <li><a href="#services">Serviços</a></li>
-               <li><a href="#depoimentos">Depoimentos</a></li>
-               <li><a href="#contact">Contato</a></li>
-            </ul>
-            <button class="hamburger" aria-label="Abrir menu"><span></span><span></span><span></span></button>
-            <div class="nav-cta"><a href="#" id="call-cta" class="btn-call">Ligue Agora:<span class="phone-number">+55 (81) 3224-9505</span></a></div>
-         </div>
-      </nav>
-      <header id="home" class="hero">
-         <div class="slider">
-            <div class="slides">
-               <div class="slide"><img src="imagens/1.webp" alt="Serviço 2" loading="lazy"></div>
-               <div class="slide"><img src="imagens/2.webp" alt="Serviço 2" loading="lazy"></div>
-               <div class="slide"><img src="imagens/3.webp" alt="Serviço 3" loading="lazy"></div>
-               <div class="slide"><img src="imagens/4.webp" alt="Serviço 4" loading="lazy"></div>
-               <div class="slide"><img src="imagens/5.webp" alt="Serviço 5" loading="lazy"></div>
-               <div class="slide"><img src="imagens/6.webp" alt="Serviço 6" loading="lazy"></div>
-               <div class="slide"><img src="imagens/1.webp" alt="Serviço 2" loading="lazy"></div>
+ 
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap">
+  <link rel="preload" as="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        rel="stylesheet" media="print"
+        onload="this.onload=null;this.removeAttribute('media');">
+  <noscript>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+  </noscript>
+
+  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet" media="print"
+        onload="this.onload=null;this.removeAttribute('media');">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+          rel="stylesheet">
+  </noscript>
+
+  
+  <link href="style.css" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
+  <noscript>
+    <link href="style.css" rel="stylesheet">
+  </noscript>
+</head>
+<body>
+  <nav class="navbar" role="navigation" aria-label="Menu principal">
+    <div class="container">
+      <a href="#home" class="logo" aria-label="Início">
+        <img src="imagens/logo-refrio.webp" alt="Logotipo da Refrio Climatização"
+             fetchpriority="high" width="200" height="80">
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#about">Quem Somos</a></li>
+        <li><a href="#mission">Nossa Essência</a></li>
+        <li><a href="#services">Serviços</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contact">Contato</a></li>
+      </ul>
+      <button class="hamburger" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-cta">
+        <a href="#" id="call-cta" class="btn-call">
+          Ligue Agora:<span class="phone-number">+55 (81) 3224-9505</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="hero">
+    <div class="slider">
+      <div class="slides">
+        <div class="slide">
+          <img src="imagens/1.webp" alt="Serviço 2"
+               fetchpriority="high" width="600" height="400">
+        </div>
+        <div class="slide">
+          <img src="imagens/2.webp" alt="Serviço 2"
+               loading="lazy" width="600" height="400">
+        </div>
+        <div class="slide">
+          <img src="imagens/3.webp" alt="Serviço 3"
+               loading="lazy" width="600" height="400">
+        </div>
+        <div class="slide">
+          <img src="imagens/4.webp" alt="Serviço 4"
+               loading="lazy" width="600" height="400">
+        </div>
+        <div class="slide">
+          <img src="imagens/5.webp" alt="Serviço 5"
+               loading="lazy" width="600" height="400">
+        </div>
+        <div class="slide">
+          <img src="imagens/6.webp" alt="Serviço 6"
+               loading="lazy" width="600" height="400">
+        </div>
+        <div class="slide">
+          <img src="imagens/1.webp" alt="Serviço 2"
+               loading="lazy" width="600" height="400">
+        </div>
+      </div>
+    </div>
+    <div class="container hero-content">
+      <h1>Refrio <span>Climatização</span></h1>
+      <p>Excelência em soluções para climatização, refrigeração, automação e energia solar desde 2013.</p>
+      <a href="#contact" class="btn btn-primary">Solicitar Orçamento</a>
+    </div>
+  </header>
+
+  <section id="about" class="about">
+    <div class="container">
+      <h2>Quem Somos</h2>
+      <p>A Refrio Climatização foi fundada em 2013, em Olinda (PE). Especializada em câmaras frigoríficas, ar-condicionado, automação, ventilação e energia solar, nossa empresa reúne profissionais altamente capacitados e utiliza equipamentos de última geração. Comprometidos com a excelência técnica e a eficiência energética, oferecemos soluções personalizadas que atendem às necessidades específicas de cada cliente. Nosso foco é garantir a confiabilidade, a durabilidade e a redução de custos operacionais, sempre respeitando as normas de segurança e as melhores práticas do setor.</p>
+    </div>
+  </section>
+
+  <section id="mission" class="mv-section">
+    <div class="container grid-3">
+      <div class="mv-card">
+        <h3>Missão</h3>
+        <p>Proporcionar bem-estar, conforto e saúde aos nossos clientes por meio de soluções de refrigeração e ar-condicionado, executadas por profissionais especializados. Oferecemos serviços de alta qualidade, com excelente custo-benefício, priorizando eficiência energética, segurança e total satisfação.</p>
+      </div>
+      <div class="mv-card">
+        <h3>Visão</h3>
+        <p>Ser reconhecida como a empresa líder em engenharia de refrigeração no Brasil, contribuindo para o desenvolvimento socioeconômico do país por meio de soluções inovadoras, sustentáveis e de alta eficiência.</p>
+      </div>
+      <div class="mv-card">
+        <h3>Valores</h3>
+        <p>Nossos valores fundamentam-se na ética, verdade e transparência; respeitamos a vida e a segurança de todos; aliamos criatividade e expertise técnica para entregar soluções de alta qualidade; buscamos equilíbrio entre eficiência energética, sustentabilidade e resultados; e cultivamos comunicação clara e colaborativa, promovendo confiança e crescimento mútuo.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="highlight">
+    <div class="container grid-3">
+      <div class="highlight-item">
+        <i class="fas fa-bolt"></i>
+        <p>Especialistas em automação de processos e eficiência energética.</p>
+      </div>
+      <div class="highlight-item">
+        <i class="fas fa-leaf"></i>
+        <p>Compromisso com a sustentabilidade e inovação.</p>
+      </div>
+      <div class="highlight-item">
+        <i class="fas fa-award"></i>
+        <p>Mais de 10 anos entregando projetos com excelência e reconhecimento.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Serviços</h2>
+      <p class="service-hint"><i class="fas fa-info-circle"></i> Clique em um card abaixo para ver <strong>detalhes</strong> e <strong>fotos</strong></p>
+      <div class="services-grid">
+        <div class="card" data-service="frigorificas">
+          <i class="fas fa-snowflake" aria-hidden="true"></i>
+          <h4>Câmaras Frigoríficas</h4>
+        </div>
+        <div class="card" data-service="ar">
+          <i class="fas fa-wind" aria-hidden="true"></i>
+          <h4>Ar-Condicionado</h4>
+        </div>
+        <div class="card" data-service="automacao">
+          <i class="fas fa-robot" aria-hidden="true"></i>
+          <h4>Automação</h4>
+        </div>
+        <div class="card" data-service="ventilacao">
+          <i class="fas fa-fan" aria-hidden="true"></i>
+          <h4>Ventilação</h4>
+        </div>
+      </div>
+      <div id="service-detail" class="service-detail hidden">
+        <button id="close-detail" aria-label="Fechar Detalhes">×</button>
+        <h3 id="detail-title"></h3>
+        <div id="detail-images" class="detail-images"></div>
+        <p id="detail-desc"></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="depoimentos">
+    <div class="container">
+      <h2>Depoimentos e Reconhecimento</h2>
+      <p class="descricao">
+        A Refrio Climatização preza pela excelência no atendimento e qualidade nos serviços prestados. A satisfação dos nossos clientes é o que nos move. Veja abaixo alguns depoimentos reais deixados em nossa página no Google.
+      </p>
+      <div class="cards-depoimentos">
+        <div class="carrossel-container">
+          <button class="nav left" aria-label="Anterior">&#10094;</button>
+          <div class="carrossel">
+            <div class="card">
+              <p class="comentario">"Pontualidade, profissionalismo e preço justo."</p>
+              <h4 class="cliente">Paulo César</h4>
+              <span class="fonte">Avaliação no Google</span>
             </div>
-         </div>
-         <div class="container hero-content">
-            <h1>Refrio<span>Climatização</span></h1>
-            <p>Excelência em soluções para climatização, refrigeração, automação e energia solar desde 2013.</p>
-            <a href="#contact" class="btn btn-primary">Solicitar Orçamento</a>
-         </div>
-      </header>
-      <section id="about" class="about">
-         <div class="container">
-            <h2>Quem Somos</h2>
-            <p>A Refrio Climatização foi fundada em 2013, em Olinda (PE). Especializada em câmaras frigoríficas, ar-condicionado, automação, ventilação e energia solar, nossa empresa reúne profissionais altamente capacitados e utiliza equipamentos de última geração. Comprometidos com a excelência técnica e a eficiência energética, oferecemos soluções personalizadas que atendem às necessidades específicas de cada cliente. Nosso foco é garantir a confiabilidade, a durabilidade e a redução de custos operacionais, sempre respeitando as normas de segurança e as melhores práticas do setor.</p>
-         </div>
-      </section>
-      <section id="mission" class="mv-section">
-         <div class="container grid-3">
-            <div class="mv-card">
-               <h3>Missão</h3>
-               <p>Proporcionar bem-estar, conforto e saúde aos nossos clientes por meio de soluções de refrigeração e ar-condicionado, executadas por profissionais especializados. Oferecemos serviços de alta qualidade, com excelente custo-benefício, priorizando eficiência energética, segurança e total satisfação.</p>
+            <div class="card">
+              <p class="comentario">"Equipe excelente e atendimento rápido. Recomendo a todos!"</p>
+              <h4 class="cliente">Juliana M.</h4>
+              <span class="fonte">Avaliação no Google</span>
             </div>
-            <div class="mv-card">
-               <h3>Visão</h3>
-               <p>Ser reconhecida como a empresa líder em engenharia de refrigeração no Brasil, contribuindo para o desenvolvimento socioeconômico do país por meio de soluções inovadoras, sustentáveis e de alta eficiência.</p>
+            <div class="card">
+              <p class="comentario">"O profissional competente e extremamente atencioso ao serviço, parabéns pelo serviço, estou bastante satisfeito com o resultado do serviço."</p>
+              <h4 class="cliente">Cleiton Azevedo</h4>
+              <span class="fonte">Avaliação no Google</span>
             </div>
-            <div class="mv-card">
-               <h3>Valores</h3>
-               <p>Nossos valores fundamentam-se na ética, verdade e transparência; respeitamos a vida e a segurança de todos; aliamos criatividade e expertise técnica para entregar soluções de alta qualidade; buscamos equilíbrio entre eficiência energética, sustentabilidade e resultados; e cultivamos comunicação clara e colaborativa, promovendo confiança e crescimento mútuo.</p>
+            <div class="card">
+              <p class="comentario">"Ótimos profissionais, atendimento perfeito, mão de obra em conta. Adorei, indico sem dúvidas."</p>
+              <h4 class="cliente">Roberto Marques</h4>
+              <span class="fonte">Avaliação no Google</span>
             </div>
-         </div>
-      </section>
-      <section class="highlight">
-         <div class="container grid-3">
-            <div class="highlight-item">
-               <i class="fas fa-bolt"></i>
-               <p>Especialistas em automação de processos e eficiência energética.</p>
+            <div class="card">
+              <p class="comentario">"Atendimento e serviço perfeito. Na pessoa do técnico Sergio, só elogio na sua presteza."</p>
+              <h4 class="cliente">Romero Alves</h4>
+              <span class="fonte">Avaliação no Google</span>
             </div>
-            <div class="highlight-item">
-               <i class="fas fa-leaf"></i>
-               <p>Compromisso com a sustentabilidade e inovação.</p>
+            <div class="card">
+              <p class="comentario">"Equipe excelente e atendimento rápido. Recomendo a todos!"</p>
+              <h4 class="cliente">Bruna Ximenes</h4>
+              <span class="fonte">Avaliação no Google</span>
             </div>
-            <div class="highlight-item">
-               <i class="fas fa-award"></i>
-               <p>Mais de 10 anos entregando projetos com excelência e reconhecimento.</p>
+            <div class="card">
+              <p class="comentario">"Excelente atendimento e pontualidade!! Muito satisfeita!!"</p>
+              <h4 class="cliente">Karina Dourado Pinho</h4>
+              <span class="fonte">Avaliação no Google</span>
             </div>
-         </div>
-      </section>
-      <section id="services" class="services">
-         <div class="container">
-            <h2>Serviços</h2>
-            <p class="service-hint"><i class="fas fa-info-circle"></i>Clique em um card abaixo para ver<strong>detalhes</strong>e<strong>fotos</strong></p>
-            <div class="services-grid">
-               <div class="card" data-service="frigorificas">
-                  <i class="fas fa-snowflake" aria-hidden="true"></i>
-                  <h4>Câmaras Frigoríficas</h4>
-               </div>
-               <div class="card" data-service="ar">
-                  <i class="fas fa-wind" aria-hidden="true"></i>
-                  <h4>Ar-Condicionado</h4>
-               </div>
-               <div class="card" data-service="automacao">
-                  <i class="fas fa-robot" aria-hidden="true"></i>
-                  <h4>Automação</h4>
-               </div>
-               <div class="card" data-service="ventilacao">
-                  <i class="fas fa-fan" aria-hidden="true"></i>
-                  <h4>Ventilação</h4>
-               </div>
+            <div class="card">
+              <p class="comentario">"Excelente! Ótimo atendimento, profissionalismo, rapidez na execução e atenção respeitosa."</p>
+              <h4 class="cliente">Evandro Costa</h4>
+              <span class="fonte">Avaliação no Google</span>
             </div>
-            <div id="service-detail" class="service-detail hidden">
-               <button id="close-detail" aria-label="Fechar Detalhes">×</button>
-               <h3 id="detail-title"></h3>
-               <div id="detail-images" class="detail-images"></div>
-               <p id="detail-desc"></p>
-            </div>
-         </div>
-      </section>
-      <section id="depoimentos" class="depoimentos">
-         <div class="container">
-            <h2>Depoimentos e Reconhecimento</h2>
-            <p class="descricao">A Refrio Climatização preza pela excelência no atendimento e qualidade nos serviços prestados. A satisfação dos nossos clientes é o que nos move. Veja abaixo alguns depoimentos reais deixados em nossa página no Google.</p>
-            <div class="cards-depoimentos">
-               <div class="cards-depoimentos">
-                  <div class="carrossel-container">
-                     <button class="nav left" aria-label="Anterior">&#10094;</button>
-                     <div class="carrossel">
-                        <div class="card">
-                           <p class="comentario">"Pontualidade, profissionalismo e preço justo."</p>
-                           <h4 class="cliente">Paulo César</h4>
-                           <span class="fonte">Avaliação no Google</span>
-                        </div>
-                        <div class="card">
-                           <p class="comentario">"Equipe excelente e atendimento rápido. Recomendo a todos!"</p>
-                           <h4 class="cliente">Juliana M.</h4>
-                           <span class="fonte">Avaliação no Google</span>
-                        </div>
-                        <div class="card">
-                           <p class="comentario">"O profissional competente e extremamente atencioso ao serviço,parabéns pelo serviço,estou bastante satisfeito com o resultado do serviço."</p>
-                           <h4 class="cliente">Cleiton Azevedo</h4>
-                           <span class="fonte">Avaliação no Google</span>
-                        </div>
-                        <div class="card">
-                           <p class="comentario">"Ótimos profissionais, atendimento perfeito mão de obra em conta adorei indico sem duvidas"</p>
-                           <h4 class="cliente">Roberto Marques</h4>
-                           <span class="fonte">Avaliação no Google</span>
-                        </div>
-                        <div class="card">
-                           <p class="comentario">"Atendimento e serviço perfeito Na pessoa do técnico Sergio só elogio na sua presteza"</p>
-                           <h4 class="cliente">Romero Alves</h4>
-                           <span class="fonte">Avaliação no Google</span>
-                        </div>
-                        <div class="card">
-                           <p class="comentario">"Equipe excelente e atendimento rápido. Recomendo a todos!"</p>
-                           <h4 class="cliente">Bruna Ximenes</h4>
-                           <span class="fonte">Avaliação no Google</span>
-                        </div>
-                        <div class="card">
-                           <p class="comentario">"Excelente atendimento e pontualidade!! Muito satisfeita!!"</p>
-                           <h4 class="cliente">Karina Dourado Pinho</h4>
-                           <span class="fonte">Avaliação no Google</span>
-                        </div>
-                        <div class="card">
-                           <p class="comentario">"Excelente! Ótimo atendimento, profissionalismo, rapidez na execução e atenção respeitosa."</p>
-                           <h4 class="cliente">Evandro Costa</h4>
-                           <span class="fonte">Avaliação no Google</span>
-                        </div>
-                     </div>
-                     <button class="nav right" aria-label="Próximo">&#10095;</button>
-                  </div>
-               </div>
-            </div>
-            <h3 class="subtitulo-parceiros">Autorizada pelas principais marcas do mercado</h3>
-            <p class="descricao">Temos orgulho de sermos uma empresa autorizada por marcas reconhecidas nacionalmente, o que reforça nosso compromisso com a qualidade e a confiança.</p>
-            <div class="parceiros"><img src="imagens/Agratto.webp" alt="Agratto"> <img src="imagens/TCL.webp" alt="TCL"> <img src="imagens/Elgin.webp" alt="Elgin"></div>
-         </div>
-      </section>
-      <section id="contact" class="contact">
-         <div class="container contact-grid">
-            <div class="contact-info">
-               <h2>Fale Conosco</h2>
-               <p><i class="fas fa-phone"></i>+55 (81) 3224-9505</p>
-               <p><i class="fas fa-envelope"></i>contato@refrioclimatizacao.com.br</p>
-               <p><i class="fas fa-map-marker-alt"></i>Av Pan nordestina Nº247 Varadouro, Olinda-PE</p>
-               <iframe class= "mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.820834513328!2d-34.860148599999995!3d-8.0174037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab22a9676fb93d%3A0x8935738160792dde!2sRefrio%20Climatiza%C3%A7%C3%A3o%20LTDA!5e0!3m2!1spt-BR!2sbr!4v1747665417029!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            </div>
-            <form class="contact-form" action="https://formsubmit.co/contato@refrioclimatizacao.com.br" method="POST"><input type="text" name="name" placeholder="Nome Completo" required> <input type="email" name="email" placeholder="E-mail Profissional" required><textarea name="message" rows="4" placeholder="Mensagem" required></textarea><button type="submit" class="btn btn-primary">Enviar Mensagem</button><input type="hidden" name="_captcha" value="false"> <input type="hidden" name="_next" value="https://seusite.com/obrigado.html"></form>
-         </div>
-      </section>
-      <div class="social-float"><a href="https://wa.me/558132249505?text=Olá!%20Gostaria%20de%20mais%20informações." class="float whatsapp" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a><a href="https://www.instagram.com/refrioclimatizacao" class="float instagram" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a></div>
-      <button id="backTop" aria-label="Voltar ao Topo"><i class="fas fa-chevron-up"></i></button>
-      <footer class="footer">
-         <div class="container center">
-            <p>&copy; 2013–2025 Refrio Climatização. Todos os direitos reservados.</p>
-         </div>
-      </footer>
-      <script src="script.js"></script>
-   </body>
+          </div>
+          <button class="nav right" aria-label="Próximo">&#10095;</button>
+        </div>
+      </div>
+
+      <h3 class="subtitulo-parceiros">Autorizada pelas principais marcas do mercado</h3>
+      <p class="descricao">
+        Temos orgulho de sermos uma empresa autorizada por marcas reconhecidas nacionalmente, o que reforça nosso compromisso com a qualidade e a confiança.
+      </p>
+      <div class="parceiros">
+        <img src="imagens/Agratto.webp" alt="Agratto">
+        <img src="imagens/TCL.webp" alt="TCL">
+        <img src="imagens/Elgin.webp" alt="Elgin">
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <div class="container contact-grid">
+      <div class="contact-info">
+        <h2>Fale Conosco</h2>
+        <p><i class="fas fa-phone"></i>+55 (81) 3224-9505</p>
+        <p><i class="fas fa-envelope"></i>contato@refrioclimatizacao.com.br</p>
+        <p><i class="fas fa-map-marker-alt"></i>Av Pan nordestina Nº247 Varadouro, Olinda-PE</p>
+        <iframe class="mapa"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.820834513328!2d-34.860148599999995!3d-8.0174037!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab22a9676fb93d%3A0x8935738160792dde!2sRefrio%20Climatiza%C3%A7%C3%A3o%20LTDA!5e0!3m2!1spt-BR!2sbr!4v1747665417029!5m2!1spt-BR!2sbr"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <form class="contact-form"
+            action="https://formsubmit.co/contato@refrioclimatizacao.com.br"
+            method="POST">
+        <input type="text" name="name" placeholder="Nome Completo" required>
+        <input type="email" name="email" placeholder="E-mail Profissional" required>
+        <textarea name="message" rows="4" placeholder="Mensagem" required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+      </form>
+    </div>
+  </section>
+
+  <div class="social-float">
+    <a href="https://wa.me/558132249505?text=Olá!%20Gostaria%20de%20mais%20informações."
+       class="float whatsapp" target="_blank" aria-label="WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+    <a href="https://www.instagram.com/refrioclimatizacao"
+       class="float instagram" target="_blank" aria-label="Instagram">
+      <i class="fab fa-instagram"></i>
+    </a>
+  </div>
+
+  <button id="backTop" aria-label="Voltar ao Topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <footer class="footer">
+    <div class="container center">
+      <p>&copy; 2013–2025 Refrio Climatização. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
 </html>
