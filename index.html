@@ -47,10 +47,9 @@
   </noscript>
 
   
-  <link href="style.css" rel="stylesheet" media="print" onload="this.onload=null;this.removeAttribute('media');">
-  <noscript>
-    <link href="style.css" rel="stylesheet">
-  </noscript>
+ <link rel="preload" as="style" href="style.css">
+<link rel="stylesheet" href="style.css">
+
 </head>
 <body>
   <nav class="navbar" role="navigation" aria-label="Menu principal">
@@ -70,11 +69,15 @@
       <button class="hamburger" aria-label="Abrir menu">
         <span></span><span></span><span></span>
       </button>
-      <div class="nav-cta">
-        <a href="#" id="call-cta" class="btn-call">
-          Ligue Agora:<span class="phone-number">+55 (81) 3224-9505</span>
-        </a>
-      </div>
+    <div class="nav-cta">
+  <a href="#" id="call-cta" class="btn-call">
+    <div class="btn-call-content">
+      <span class="call-text">Ligue Agora</span>
+      <span class="phone-number">+55 (81) 3224-9505</span>
+    </div>
+  </a>
+</div>
+
     </div>
   </nav>
 
