@@ -2,13 +2,21 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-01GZSE8191"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-01GZSE8191');
+</script>
+
   <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
   <title>Refrio Climatização</title>
   <meta name="description" content="Soluções completas em climatização e refrigeração, unindo tecnologia de ponta e sustentabilidade desde 2013.">
   <meta property="og:title" content="Refrio Climatização – Excelência em Climatização e Refrigeração">
   <meta property="og:description" content="Referência em engenharia de climatização: inovação, qualidade e sustentabilidade.">
   <meta property="og:image" content="logo.png">
-
   
   <style>
     *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
@@ -274,16 +282,17 @@
                 referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
-      <form class="contact-form"
-            action="https://formsubmit.co/contato@refrioclimatizacao.com.br"
-            method="POST">
-        <input type="text" name="name" placeholder="Nome Completo" required>
-        <input type="email" name="email" placeholder="E-mail Profissional" required>
-        <textarea name="message" rows="4" placeholder="Mensagem" required></textarea>
-        <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-        <input type="hidden" name="_captcha" value="false">
-        <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
-      </form>
+     <form id="contact-form" class="contact-form"
+      action="https://formsubmit.co/contato@refrioclimatizacao.com.br"
+      method="POST">
+  <input type="text" name="name" placeholder="Nome Completo" required>
+  <input type="email" name="email" placeholder="E-mail Profissional" required>
+  <textarea name="message" rows="4" placeholder="Mensagem" required></textarea>
+  <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
+  <input type="hidden" name="_captcha" value="false">
+  <!-- removi o input _next para evitar redirecionamento -->
+</form>
+
     </div>
   </section>
 
