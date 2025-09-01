@@ -96,13 +96,25 @@ backTop.addEventListener("click", () => {
 const form = document.querySelector(".contact-form");
 
 form.addEventListener("submit", e => {
-  // Não use e.preventDefault()
+  e.preventDefault();
+
+  const data = new FormData(form);
+  const action = e.target.action;
   
-  // Envia o evento de conversão do Google Ads
-  gtag('event', 'conversion', {'send_to': 'AW-965722099/2IdpCMLmiKsDEPP_vswD'});
-  
-  // O formulário será enviado normalmente
-  // A página irá redirecionar para 'sucesso.html'
+  fetch(action, {
+    method: "POST",
+    body: data,
+  })
+  .then(() => {
+    gtag('event', 'conversion', {'send_to': 'AW-965722099/2IdpCMLmiKsDEPP_vswD'});
+    
+    form.reset();
+    alert("Obrigado pelo contato! Sua mensagem foi enviada com sucesso.");
+  })
+  .catch(error => {
+    console.error('Erro ao enviar o formulário:', error);
+    alert("Ocorreu um erro ao enviar a mensagem. Por favor, tente novamente.");
+  });
 });
 
 (function() {
