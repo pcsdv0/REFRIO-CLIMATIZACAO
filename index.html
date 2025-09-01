@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -285,13 +286,21 @@
      <form id="contact-form" class="contact-form"
       action="https://formsubmit.co/juliana@refrioclimatizacao.com.br"
       method="POST">
+
+  <input type="hidden" name="_subject" value="Nova Mensagem do Site Refrio">
+
   <input type="text" name="name" placeholder="Nome Completo" required>
-  <input type="email" name="email" placeholder="E-mail Profissional" required>
+  
+  <input type="email" name="email" placeholder="Seu E-mail" required>
+
   <textarea name="message" rows="4" placeholder="Mensagem" required></textarea>
   <button type="submit" class="btn btn-primary">Enviar Mensagem</button>
-  <input type="hidden" name="_captcha" value="false">
-</form>
 
+  <input type="hidden" name="_captcha" value="true">
+  
+  <input type="hidden" name="_next" value="https://refrioclimatizacao.com.br/sucesso.html">
+
+</form>
     </div>
   </section>
 
