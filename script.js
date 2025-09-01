@@ -94,14 +94,15 @@ backTop.addEventListener("click", () => {
 });
 
 const form = document.querySelector(".contact-form");
+
 form.addEventListener("submit", e => {
-  e.preventDefault();
-
-  alert("Obrigado pelo contato! Em breve retornaremos.");
-  form.reset();
-
-  // Evento de conversão Google Ads
+  // Não use e.preventDefault()
+  
+  // Envia o evento de conversão do Google Ads
   gtag('event', 'conversion', {'send_to': 'AW-965722099/2IdpCMLmiKsDEPP_vswD'});
+  
+  // O formulário será enviado normalmente
+  // A página irá redirecionar para 'sucesso.html'
 });
 
 (function() {
